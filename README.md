@@ -9,7 +9,7 @@ by **Marc Daniel Registre**
 Companion code repository for the book **_Tabular Machine Learning with PyTorch — Made Easy for Beginners_**.  
 This repository contains runnable notebooks, practical “Try It Yourself” exercises, datasets, and utilities to help you follow along chapter by chapter.
 
-> 📖 **Buy the book** → [Amazon](LINK_TO_AMAZON) | [Publisher](LINK_TO_PUBLISHER)  
+> 📖 **Buy the book** → [Amazon](https://www.amazon.com/dp/B0FV76J3BZ)  
 > 🧠 **Learn by doing** — all examples use **real tabular data** and **PyTorch** step-by-step.
 
 ---
