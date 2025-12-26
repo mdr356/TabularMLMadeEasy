@@ -1,0 +1,13 @@
+torch
+torchvision
+numpy
+matplotlib
+pillow
+opencv-python
+scikit-learn
+tqdm
+notebook
+jupyter
+onnx
+onnxruntime
+onnxsim

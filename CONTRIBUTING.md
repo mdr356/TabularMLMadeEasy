@@ -1,17 +1,18 @@
-# Contributing
+# Contributing to CNNMadeEasy
 
-Thanks for your interest! For small fixes, open a PR. For larger changes, please open an issue first.
+Thank you for your interest in contributing!
 
-## Setup
-- Python >= 3.10 recommended
-- `pip install -r requirements.txt`
+## How to Contribute
+1. Fork the repository  
+2. Create a feature branch  
+3. Make improvements  
+4. Submit a pull request  
 
-## Formatting & Linting
-- Run `ruff check .` and `ruff format .` before committing (optional but recommended).
+## Guidelines
+- Keep examples simple and beginner-friendly  
+- Use PyTorch for model code  
+- Add comments to explain non-obvious steps  
+- Follow PEP8 for Python where applicable  
 
-## Tests
-- Run `pytest`.
-
-## Notebooks
-- Keep notebooks lightweight and re‑runnable.
-- Clear personal paths and secrets.
+## Thank You
+Your contributions help beginners learn deep learning and computer vision.

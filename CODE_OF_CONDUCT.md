@@ -1,3 +1,22 @@
-# Code of Conduct
+# Contributor Covenant Code of Conduct
 
-Be respectful and constructive. Harassment and discrimination are not tolerated. Report issues via GitHub or EMAIL_ADDRESS.
+## Our Pledge
+We pledge to make participation in this project a harassment-free experience for everyone.
+
+## Standards
+Positive behaviors:
+- Inclusive language
+- Respectful communication
+- Constructive feedback
+
+Unacceptable behaviors:
+- Harassment or trolling
+- Discriminatory comments
+- Publishing private information
+
+## Enforcement
+Report issues to **mdr356@nyu.edu**.  
+Violations may result in removal from the project.
+
+## Attribution
+Adapted from Contributor Covenant v2.1.
