@@ -1,162 +1,249 @@
-# 📘 Tabular Machine Learning with PyTorch  
-**Made Easy for Beginners**  
-by **Marc Daniel Registre**
+# 📘 Convolutional Neural Networks with PyTorch  
+### **Made Easy for Beginners**  
+by **Marc Daniel Registre**  
+License: MIT | Build | Open in Colab
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
-[![Build](https://github.com/USERNAME/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/USERNAME/REPO/actions)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/USERNAME/REPO)
+Companion code repository for **Convolutional Neural Networks with PyTorch — Made Easy for Beginners (Book 2 of the Made Easy Series)**.  
+This repo includes runnable notebooks, utilities, datasets, explainability tools, model converters, and **production-ready mobile deployment helpers** used in Chapters 14 and 15.
 
-Companion code repository for the book **_Tabular Machine Learning with PyTorch — Made Easy for Beginners_**.  
-This repository contains runnable notebooks, practical “Try It Yourself” exercises, datasets, and utilities to help you follow along chapter by chapter.
-
-> 📖 **Buy the book** → [Amazon](https://www.amazon.com/dp/B0FV76J3BZ)  
-> 🧠 **Learn by doing** — all examples use **real tabular data** and **PyTorch** step-by-step.
+📖 **Buy the Book → Amazon (Coming Soon)**  
+🧠 Learn CNNs by **building real models**, **visualizing how AI sees**, and **deploying your own model to Android & iOS**.
 
 ---
 
-## 🧭 Table of Contents
+# 🧭 Table of Contents (Matches the Book)
 
-| Part | Chapter | Topic |
-|------|---------|-------|
-| **Part One: Introduction** | 1 | Why Tabular Machine Learning? |
-| | 2A | Understanding Your Data |
-| | 2B | Preparing Your Data |
-| **Part Two: Regression** | 3 | Regression Matters |
-| | 4 | From Math to Machines |
-| | 5 | Multiple Linear Regression |
-| | 6 | Non-Linear Models |
-| **Part Three: Inside a Neural Network** | 7 | The Building Block |
-| **Part Four: Classification** | 9 | Multi-Class Classification |
-| | 10 | Multi-Label Classification |
-| **Part Five: Evaluation & Improvement** | 11 | What Is Model Evaluation? |
-| | 12 | The Goldilocks Problem |
-| **Part Six: Case Studies** | 13 | Predicting Store Sales |
-| | 14 | Customer Churn Prediction |
-| | 15 | Tabular Deep Learning Extensions |
+## **PART I — Your Machine Learning Foundation**  
+*"The expert in anything was once a beginner."*
+
+| Chapter | Topic |
+|--------|--------|
+| 1 | Book 1 Recap — Tabular ML Essentials |
+| — | PyTorch Quick Reference & Cheat Sheets |
 
 ---
 
-## 🚀 Quick Start
+## **PART II — Understanding Images & CNN Basics**  
+*"Every image is a table in disguise — but now, position matters."*
 
-You can run the notebooks either on **Google Colab** (recommended for beginners) or locally.
-
-### ▶️ Option 1: Run on Google Colab
-
-Click the badge below to open the repo in Colab without any installation:
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/USERNAME/REPO)
+| Chapter | Topic |
+|--------|--------|
+| 2 | From Loans to Pixels |
+| 3 | The RGB Revolution |
+| 4A | The Problem with Pixels |
+| 4B | Time to Test Our Theory |
+| 5 | Convolutional Neural Network |
+| 6 | The Pooling Layer |
+| 7 | The VGG Blueprint |
+| 8 | ResNet — The Skip Connection Revolution |
 
 ---
 
-### 💻 Option 2: Run Locally with Conda or venv
+## **PART III — Make Your Model Smarter**  
+*"Make your model smarter."*
+
+| Chapter | Topic |
+|--------|--------|
+| 9 | Transfer Learning |
+| 10 | Data Augmentation & Regularization |
+| 11 | Visualization (Grad-CAM + Activation Maps) |
+| 12 | Object Detection with YOLO |
+| 13 | EfficientNet & Modern CNNs |
+
+---
+
+## **PART IV — Real-World Deployment**  
+*"Take your model into the real world."*
+
+| Chapter | Topic |
+|--------|--------|
+| 14 | Deploying to Android |
+| 15 | Deploying to iOS |
+
+---
+
+# 🚀 Quick Start
+
+You can run all notebooks on **Google Colab** or locally.
+
+## ▶️ Option 1: Run on Google Colab  
+(Coming Soon — each chapter notebook will include a direct “Open in Colab” button)
+
+## 💻 Option 2: Run Locally
 
 ```bash
-# Clone the repository
-git clone https://github.com/USERNAME/REPO.git
-cd REPO
+git clone https://github.com/mdr356/CNNMadeEasy.git
+cd CNNMadeEasy
 
-# (Recommended) Create a conda environment
-conda create -n tabular-ml python=3.10
-conda activate tabular-ml
+conda create -n cnn-made-easy python=3.10
+conda activate cnn-made-easy
 
-# Install dependencies
 pip install -r requirements.txt
 
-# Start Jupyter Notebook
 jupyter notebook
 ```
 
 ---
 
-## 📂 Repository Structure
+# 📂 Repository Structure
 
 ```
-public-repo/
-└── tmlp/
-    └── chapter-code/
-        ├── chapter-4.ipynb
-        ├── chapter-4-tryItYourself.ipynb
-        ├── chapter-5.ipynb
-        ├── chapter-5-TryItYourself.ipynb
-        ├── chapter-6.ipynb
-        ├── chapter-8.ipynb
-        ├── chapter-9.ipynb
-        ├── Chapter-9-TryItYourSelf-Digits.ipynb
-        ├── Chapter-9-TryItYourSelf-Wine.ipynb
-        ├── Chapter-10.ipynb
-        ├── Chapter-10-TryItYourself.ipynb
-        ├── Chapter-13.ipynb
-        ├── chapter 14 - pytorch tabular.ipynb
-        └── chapter 15 - pytorch tabular.ipynb
+CNNMadeEasy/
+├── README.md
+├── requirements.txt
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── .gitignore
+├── chapter-code/                  ← your notebooks
+├── utils/
+│   ├── image_utils.py
+│   ├── gradcam_utils.py
+│   └── lite_rt_converter.py
+├── android/
+│   └── UniversalAndroidAI.kt
+├── ios/
+│   └── UniversaliOSAI.swift
+├── models/
+│   └── mobilenet_universal.tflite  (placeholder in this starter repo)
+├── assets/
+│   ├── diagrams/
+│   └── images/
+└── data/
 ```
 
-- Each **chapter notebook** corresponds to a chapter in the book.  
-- `TryItYourself` notebooks are exercises for hands-on practice.  
-- Case study notebooks (Ch. 13–15) showcase **real-world datasets**.
+---
+
+# 🧱 Deployment Code (Used in Chapters 14 & 15)
+
+This repo includes **full POC implementations** to help beginners deploy real CNNs to their phones.
 
 ---
 
-## 📝 Datasets
+# 📱 Android Deployment Helper — `UniversalAndroidAI.kt`
 
-The datasets used in the book are either:
-- Synthetic (generated with `scikit-learn`)
-- Publicly available (e.g., UCI ML Repository, Kaggle)
-- Packaged with the notebooks
+Used in **Chapter 14 — Deploying to Android (Jetpack Compose, LiteRT)**
 
-Each notebook includes download links or code to generate the dataset automatically. No manual download is required.
+```kotlin
+class UniversalAndroidAI {
+    companion object {
+        // Universal model file shipped with your Android app
+        const val MODEL_FILE = "mobilenet_universal.tflite"
 
----
+        fun predictOnAndroid(bitmap: Bitmap): String {
+            val model = LiteRTModel.load(MODEL_FILE)
+            val input = preprocessForPhone(bitmap)   // convert Bitmap → float tensor
+            val results = model.predict(input)
+            return "Android: ${interpretResults(results)}"
+        }
+    }
+}
+```
 
-## 🧠 What You’ll Learn
-
-By working through these notebooks, you will:
-- Understand tabular data preprocessing & feature scaling  
-- Build regression & classification models using **PyTorch**  
-- Interpret metrics such as **MAE**, **R²**, **accuracy**, **F1**, and more  
-- Visualize model predictions and errors  
-- Implement **regularization (L1/L2)** and **early stopping**  
-- Solve real problems such as **sales prediction** and **customer churn**  
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!  
-Please see [`CONTRIBUTING.md`](CONTRIBUTING.md) and follow the [Code of Conduct](CODE_OF_CONDUCT.md).
-
-Common ways to contribute:
-- Fix typos or improve explanations in notebooks
-- Add new datasets or exercises
-- Translate notebooks into other languages
-- Report issues or suggest improvements
+This helper shows how to:
+- Bundle a `.tflite` model into your app  
+- Convert a `Bitmap` into a model-ready tensor  
+- Run on-device inference  
+- Return a human-readable string for the UI  
 
 ---
 
-## 📄 License
+# 🍎 iOS Deployment Helper — `UniversaliOSAI.swift`
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+Used in **Chapter 15 — Deploying to iOS (Swift, SwiftUI-compatible)**
+
+```swift
+class UniversaliOSAI {
+    static func predictOniOS(image: UIImage) -> String {
+        let model = try LiteRTModel("mobilenet_universal.tflite")
+        let input = preprocessForPhone(image)         // convert UIImage → float tensor
+        let results = try model.predict(input)
+        return "iOS: \(interpretResults(results))"
+    }
+}
+```
+
+This helper shows how to:
+- Load the same `.tflite` model on iOS  
+- Convert `UIImage` into tensors  
+- Run inference in Swift  
+- Keep **one universal model** across Android & iOS  
 
 ---
 
-## ✍️ Author
+# 📝 Datasets
+
+All datasets load automatically using:
+
+- `torchvision.datasets`  
+- Sample images in `assets/images`  
+- YOLO demo images for Chapter 12  
+
+No manual downloads required.
+
+---
+
+# 🔍 What You Will Learn
+
+### From ML → Vision
+- Why images are 3D tensors  
+- How CNNs use RGB channels  
+- How convolutions detect edges and patterns  
+- Why pooling layers reduce computation  
+
+### Build Real CNN Architectures
+- Your first CNN classifier  
+- VGG (deep but structured)  
+- ResNet (skip connections)  
+- MobileNet (optimized for phones)  
+- EfficientNet (scaled for performance)  
+
+### Explainability & Visualization
+- Activation map visualization  
+- Grad-CAM heatmaps  
+- Understanding “what your AI sees”  
+
+### Object Detection
+- YOLO basics  
+- Bounding box predictions  
+- Multi-object detection on real images  
+
+### Mobile Deployment
+- Exporting PyTorch models to LiteRT/TFLite  
+- Packaging `.tflite` inside apps  
+- Android + iOS inference  
+- End-to-end mobile AI flows  
+
+---
+
+# 🤝 Contributing
+
+See **CONTRIBUTING.md** for full guidelines.
+
+Ways to contribute:
+- Improve explanations  
+- Add utility functions  
+- Add examples or small datasets  
+- Fix bugs or typos  
+
+---
+
+# 📄 License
+
+MIT License — see LICENSE.
+
+---
+
+# ✍️ Author
 
 **Marc Daniel Registre**  
-- 💼 [LinkedIn](https://www.linkedin.com/in/marc-daniel-registre)  
-- 🌐 [Github](https://www.github.com/mdr356)  
+🔗 LinkedIn • 🌐 GitHub  
 
 ---
 
-## ⭐ Acknowledgments
+# 🧭 Next Steps
 
-Special thanks to:
-- The PyTorch community for making deep learning approachable  
-- Readers and early testers who provided valuable feedback  
-- Educators and mentors who inspire hands-on learning
-
----
-
-## 🧭 Next Steps
-
-- 📚 Start with **Chapter 1** and work sequentially  
-- 📝 Keep a separate notebook for your experiments  
-- 🚀 Share your progress on social media with the hashtag **#TabularMLMadeEasy**
+📚 Start with Chapter 1  
+📸 Try your own images in the notebooks  
+🚀 Deploy a model to your phone  
+🌐 Share your journey with **#CNNMadeEasy**
+# CnnMadeEasy
